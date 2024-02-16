@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Task 2</title>
+
+    <style>
+        body{
+            display: flex;
+            
+            
+            justify-content: center;
+            
+            background-color: rgb(253, 120, 67);
+        }
+        .container{
+            width: 300px;
+            height: 200px;
+            background-color: white;
+            text-align: center;
+            margin-top: 10rem ;
+            border-radius: 10px;
+            box-shadow: 3px 3px 5px rgb(48, 48, 48);
+            
+            
+        }
+        #otp{
+            height: 40px;
+            font-size: 40px;
+            width: 80%;
+            margin: 10px auto;
+            border-bottom: 3px solid orange;
+            box-sizing: content-box;
+        }
+        #length{
+            background-color: orange;
+            padding: 5px;
+            border: none;
+            width: 70px;
+        }
+
+        button{
+            background-color: orange;
+            padding: 5px;
+            border: none;
+            width: 150px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <h2>OTP Generator</h2>
+       
+       
+       
+        <select name="length" id="length">
+            <option value="4">4 Digit</option>
+            <option value="6">6 Digit</option>
+            <option value="8">8 Digit</option>
+        </select>
+        <div id="otp">
+
+        </div>
+        <button id="btn" onclick="getOTP()">Generate OTP</button>
+    </div>
+
+
+    <script src="script.js"> </script>
+</body>
+</html>
